@@ -1,0 +1,23 @@
+h1. Heroku Env - Easy heroku environment variables in development mode
+
+h2. About
+
+Heroku Env fetchs all your heroku config variables and set up them in your
+local development environment.
+
+h2. Usage
+
+Add the the gem to your <code>Gemfile</code>
+
+<code>gem "heroku_env"</code>
+
+Configure <code>config/heroku_env.yml</code> optionaly to customize the variables
+without changing herokus or your variables
+
+<pre><code>development:
+  GOOGLE_ANALYTICS: nil
+  FOO: BAR
+</code></pre>
+
+Heroku Env will overwrite herokus environment variables with yours in
+<code>config/heroku_env.yml</code>
