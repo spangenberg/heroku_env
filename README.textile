@@ -19,5 +19,5 @@ without changing herokus or your variables
   FOO: BAR
 </code></pre>
 
-Heroku Env will overwrite herokus environment variables with yours in
-<code>config/heroku_env.yml</code>
+You can generate a default <code>heroku_env.yml</code> file with a rake task:
+<code>rake heroku_env:config:create</code>
